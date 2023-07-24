@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Seminar Series</title>
+
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About Us</a>
+</li>
+<li>
+  <a href="seminar.html">Seminar Series</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://www.youtube.com/channel/UCznVGBLo-DzNd5xXIm1ZLJA">
+    <span class="fa fa-brands fa-youtube fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/TSEcol_Group">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:rafael.deandrademoral@mu.ie">
+    <span class="fa fa-regular fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Seminar Series</h1>
+
+</div>
+
+
+<p>The objective of this seminar series is to introduce new topics,
+discuss current methodologies and explore different theories within
+mathematical and statistical ecology. Our seminar series will run from
+October to May each year. Each seminar will be cc. 40 minutes and will
+take place on <strong>every second Wednesday of the month</strong> with
+possible exceptions. There may be more than one talk per month, if time
+permits. You can also watch each talk on our <a
+href="https://www.youtube.com/channel/UCznVGBLo-DzNd5xXIm1ZLJA/videos">YouTube
+Channel</a>. You can join the talk each month here: <a
+href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YjhlMDA0ZTEtM2M4NS00ODQ2LThiZmItZGE5MmIzNTlkY2M4%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25221454f5cc-bb35-4685-bbd9-8621fd8055c9%2522%252c%2522Oid%2522%253a%25223908a733-7e0c-4f62-af51-8649dfed81b1%2522%257d%26anon%3Dtrue&amp;type=meetup-join&amp;deeplinkId=596db43d-0b9b-4d2d-bc34-32b90c24bd13&amp;directDl=true&amp;msLaunch=true&amp;enableMobilePage=true&amp;suppressPrompt=true">Teams
+Link</a>. You can also subscribe to receive a monthly email with the
+abstract and link for each talk here: <a
+href="https://gmail.us10.list-manage.com/subscribe?u=fd900e50c056c3e67b7b20b5b&amp;id=ce0dd44ea2">Mailing
+List</a>.</p>
+<p>Here is a time zone conversion website to see when our talks are on
+in your locality: <a
+href="https://greenwichmeantime.com/time-gadgets/time-zone-converter/">Time
+Zone Converter</a>.</p>
+<hr />
+<div id="past" class="section level2">
+<h2>Past</h2>
+<p><br></p>
+<p><strong>10 May 2023 – Wesley Godoy (University of São Paulo)</strong>
+[4pm Irish Standard Time/BST]</p>
+<p><u>Analysing forest insect outbreaks via wavelet analysis</u></p>
+<p>Oncideres impulviata is a pervasive forest pest of black wattle trees
+in Brazil. Available damage records indicate that this beetle can cause
+significant harm to tree plantations, with both environmental and
+economic losses. Females are known to ring (girdle) the trunks of black
+wattle and subsequently lay their eggs. This girdling behaviour can
+reduce the productivity of such trees, especially in the early stages of
+establishment, disrupting sap flow and therefore severely impairing tree
+growth. In this talk I will apply wavelet analysis to time series of
+damaged trees in order to deduce when there is an outbreak of O.
+impulviata induced tree damage, across three Brazilian municipalities
+over 13 years.</p>
+<p><br></p>
+<p><strong>12 April 2023 – Laura Byrne (Trinity College
+Dublin)</strong></p>
+<p><u>Multivariate Statistical Models for Biodiversity
+Experiments</u></p>
+<p>Diversity-Interactions (DI) modelling is a regression-based approach
+used for assessing the biodiversity and ecosystem function (BEF)
+relationship. It assumes that the initial proportional abundance of the
+species in an ecosystem is the primary driver behind the changes in its
+functioning, expanding on the popular use of richness. The linear
+predictor in a DI model includes the identity effect of each species,
+along with the interaction effects that may occur between species (which
+can take many forms) and can also include any treatment or block
+structures in the design. Following the introduction of the DImodels R
+package in 2020, we are developing an add-on package DImodelsMulti. The
+original package enables the automatic fitting of a range of DI models
+for a single ecosystem function studied at a single point in time. The
+new package can additionally model multiple responses and account for
+repeated measurements on a single experimental unit by incorporating a
+variety of correlation structures. Further work in the multivariate
+space will also be added to the package in future updates, such as the
+prediction of the proportional breakdown of species in biomass over time
+using the DI modelling framework. The new DImodelsMulti package provides
+considerable flexibility in model selection and estimation of DI models
+and will be a useful tool in the study of multifunctional BEF
+relationships studied over time.</p>
+<p><br></p>
+<p><strong>8 March 2023 – Rachel McCrea (Lancaster
+University)</strong></p>
+<p><u>Statistical models for conservation translocations</u></p>
+<p>Conservation translocations are being increasingly used in the
+conservation of threatened species and as part of ecological restoration
+programmes (Bickerton et al, 2022). Robust estimates of abundance are
+essential for meaningful conservation decision-making and the impact of
+translocations on source populations needs to be understood. Within this
+talk I will present a new capture-recapture model for translocated
+populations and will then present a modelling framework where
+capture-recapture is combined with removal/depletion methodology (Zhou
+et al, 2019). I will demonstrate that an exact likelihood is possible
+when individual level information is available, and I will show how a
+standard integrated population modelling approach (Frost, et al, 2022),
+which assumes independence between component data sets, can be adapted
+to provide an approximate likelihood when individual level data is not
+available. This approach, as well as providing a valuable tool for
+estimating the abundance of source populations post translocation, also
+motivates a new direction of research for overcoming issues of
+dependence of data within a standard integrated population modelling
+framework.</p>
+<p><br></p>
+<p><strong>8 February 2023 – Anuraag Bukkuri (Moffitt Cancer
+Centre)</strong></p>
+<p><u>Models of Resistance in Structured Populations</u></p>
+<p>Neuroblastoma is a paediatric cancer of variable clinical
+presentation, from spontaneous regression to metastatic
+therapy-resistance. Although the cause of neuroblastoma remains elusive,
+it is well recognized that two distinct cellular phenotypes underpin its
+development and progression: adrenergic (ADRN) and mesenchymal (MES).
+However, how these phenotypes impact the eco-evolutionary dynamics of
+neuroblastoma cancer cell populations, particularly under therapy, is
+not well understood. This is partly a result of the confusion
+surrounding whether the ADRN and MES phenotypes represent different cell
+types (species) or cell states (stages in the life cycle of a single
+species). This distinction has profound consequences on the way we
+understand neuroblastoma and its response to therapy. In this talk, we
+will introduce theoretical models sensu the G function framework to
+model the eco-evo dynamics in structured neuroblastoma populations and
+use these models to tease apart cell type vs. cell state hypotheses. We
+will then expand and generalize this framework to continuous-structured
+models and discuss implications for cancer and bacterial resistance more
+generally.</p>
+<p><br></p>
+<p><strong>11 January 2023 – Gabriel Palma (Maynooth
+University)</strong></p>
+<p><u>Pattern-Based Prediction of Population Outbreaks</u> Insect
+outbreaks are biotic disturbances in forests and agroecosystems that
+cause economic and ecological damage. This phenomenon depends on a
+variety of biological and physical factors. The complexity and practical
+importance of the issue have made the problem of predicting outbreaks a
+focus of recent research. In this talk I will speak on the Pattern-Based
+Prediction (PBP) method for predicting population outbreaks, based on
+the Alert Zone Procedure, combined with elements from Machine Learning.
+It uses information on previous time series values that precede an
+outbreak event as predictors of future outbreaks, which can be useful
+when monitoring pest species. I will illustrate the methodology using
+simulated datasets and real time series data obtained by monitoring
+aphids in wheat crops in Southern Brazil. I hope this methodology to be
+useful to non-specialists, such as ecologists aiming to use a
+quantitative approach for pest monitoring.</p>
+<p><br></p>
+<p><strong>14 December 2022 – Rebecca Tyson (University of British
+Columbia Okanagan)</strong></p>
+<p><u>Generous mutualists can outcompete more selfish ones</u></p>
+<p>Biodiversity is an important component of healthy ecosystems, and
+thus under-standing the mechanisms behind species coexistence is
+critical in ecology and conservation biology. We are interested in
+understanding mutualisms where there are multiple species sharing a
+resource supplied by the same partner. If, as commonly assumed, there is
+competition between the species, then, in general, only the superior
+competitor should persist. Nevertheless, close coexistence of multiple
+species sharing the same mutualistic partner is a widespread phenomenon.
+Modelling work has demonstrated that coexistence of mutualists can be
+made possible by invoking mechanisms such as niche differences,
+colonization-competition trade-offs, spatial structure, or
+physio-evolutionary feedbacks. None of these mechanisms, however, can
+explain the coexistence of species with a high degree of niche overlap
+in the absence of spatial structure. In this talk, I will present a
+series of differential equation mathematical models for mutualistic
+communities, using the plant-fungal relationship as our motivating
+example. The baseline model demonstrates that asymmetric resource
+exchange between the plant and its fungal guild can lead to indirect
+parasitic interactions between guild members, and coexistence of
+multiple mutualistic fungi. With a subsequent extension of this baseline
+model, I will present the dynamics of mutualistic communities that also
+compete among and between each other and show that coexistence and
+competitive exclusion are both possible outcomes, depending on the
+competition strength and on strength of the mutualistic interactions.
+Finally, we extend the model to the spatial context, and observe how the
+introduction of a commercial fungus will affect the resident fungal
+communities through the invasion processes that follow inoculation.</p>
+<p><br></p>
+<p><strong>9 November 2022 – Patrick De Leenheer (Oregon State
+University)</strong></p>
+<p><u>The basic reproduction number for linear semigroups in <span
+class="math inline">\(R^n\)</span> with an invariant cone</u></p>
+<p>We consider linear ODEs <span class="math inline">\(\dot{x} =
+Ax\)</span> on <span class="math inline">\(R^n\)</span>, and first
+characterize the class of operators <span
+class="math inline">\(A\)</span> that have the property that <span
+class="math inline">\(e^{tA}(K)\)</span> is contained in the cone <span
+class="math inline">\(K\)</span> for all non-negative <span
+class="math inline">\(t\)</span>. These turn out to be the so-called
+cross-positive operators on <span class="math inline">\(K\)</span>, or
+equivalently, the class of resolvent-positive operators (with respect to
+<span class="math inline">\(K\)</span>). We then introduce the notion of
+a basic reproduction number <span class="math inline">\(R_0\)</span> and
+discuss the trichotomy which says that <span class="math inline">\(R_0 –
+1\)</span> and the spectral abscissa <span
+class="math inline">\(s(A)\)</span> of <span
+class="math inline">\(A\)</span> always have the same sign (positive,
+negative or zero). Basic reproduction numbers are often easier to
+calculate than the spectral abscissa, which is why they are so popular
+in epidemiology and ecology. We shall illustrate these concepts and
+results on a simple model of an infectious disease, and if time permits,
+show that controlling <span class="math inline">\(R_0\)</span> one way
+may have an opposite effect on the spectral abscissa. This suggests that
+one should be (more) careful when lowering <span
+class="math inline">\(R_0\)</span> in order to control an infectious
+disease.</p>
+<p><br></p>
+<p><strong>5 October 2022 – André Felipe Berdusco Menezes (Maynooth
+University)</strong></p>
+<p><u>Detection of Structural Changes in Dynamic Linear Models: A Python
+Package</u></p>
+<p>Bayesian dynamic models naturally allow for subjective interventions
+describing probabilistic expert knowledge. Monitoring forecast errors
+based on local Bayes factor is used to find structural changes and take
+immediate action. In this talk we will introduce an open source Python
+package called <code>pybats-detection</code>, proposed for Bayesian
+monitoring and intervention in univariate time series data. The
+implementation of these methods through the pybats-detection package,
+which in the past was provided by the software BATS, is what we are most
+concerned about. This methodology is scalable because, at least in the
+Gaussian case, its algorithm has closed form. In order to demonstrate
+the usability of the <code>pybats-detection</code> package, we apply it
+to a simulated ecological time series dataset composed of species
+density or biomass observations and discuss possible avenues for future
+work.</p>
+<p><br></p>
+<p><strong>11 May 2022 – Shandelle Henson (Andrews
+University)</strong></p>
+<p><u>Periodic matrix models for the seasonal dynamics of
+seabirds</u></p>
+<p>Changes in sea surface temperatures in the Pacific Northwest are
+associated with changes in reproductive and feeding tactics in colonial
+seabirds. For example, warm years in the El Niño–Southern Oscillation
+are associated with tactics such as egg cannibalism and egg-laying
+synchrony in gulls. How do these changes in behavioral dynamics affect
+population dynamics, especially tipping points? In general, for
+structured matrix models of populations that are periodically forced by
+an annual breeding season, life-stage interactions and behavioral
+tactics may occur on a faster time scale than that of population
+dynamics. We use bifurcation theoretic techniques to study a class of
+such models, focusing on the nature of non-extinction, seasonal cycles
+as a function of environmental resource availability. Backward
+bifurcations can create tipping points as well as strong Allee effects
+which lead to the benefit of possible (initial condition dependent)
+survival in adverse environments. In the application, we find that
+positive density effects (component Allee effects) due to increased
+adult survival from cannibalism and the propensity of females to
+synchronize daily egg laying can produce tipping points and a strong
+Allee effect due to a backward bifurcation.</p>
+<p><br></p>
+<p><strong>6 April 2022 – Ruth King (University of Edinburgh)</strong>
+<u>Large data and (even not that very) complex ecological models: When
+worlds collide</u></p>
+<p>As long-term studies of ecological systems continue to collect data,
+the size of such datasets continue to expand in size. This talk focuses
+on challenges that arise when fitting (not even very) complex ecological
+models to “large” data sets, motivated by a long-term study of a
+population of guillemots involving approximately 30,000 individuals. In
+particular focus lies on fitting a random effect (or hierarchical)
+capture-recapture model. The associated likelihood of the given model
+that is expressible only as an analytically intractable integral. Common
+techniques for fitting such models include, for example, the use of
+direct numerical approximations for the integral, or a Bayesian data
+augmentation approach. However, as the size of the data set increases
+(i.e. the number of individuals increases), these computational tools
+may become computationally infeasible, as for the motivating guillemot
+example. I will describe an efficient Bayesian model-fitting approach,
+which involves initially sampling from the posterior distribution of a
+smaller subsample of the data, before correcting this sample to obtain
+estimates of the posterior distribution of the full dataset, using an
+importance sampling approach. I will demonstrate how this approach leads
+to substantial improvements in computational time for simulated data
+before applying to the guillemot example and discuss some additional
+practical implementational aspects.</p>
+<p><br></p>
+<p><strong>9 March 2022 – Jean-Francois Arnoldi (CNRS)</strong></p>
+<p><u>Invasions of ecological communities : hints of impact in the
+invader’s growth rate</u></p>
+<p>Theory in ecology and evolution often relies on the analysis of
+invasion processes, and general approaches exist to understand the early
+stages of an invasion. However, predicting the long‐term transformations
+of communities following an invasion remains challenging. I will
+describe some theoretical work that uses the density dependence of an
+invading population’s growth rate to predict if the invasion will cause
+large long‐term impacts on the invaded community. This approach
+clarifies how the density dependence of the invasion growth rate is as
+much a property of the invading population as it is one of the invaded
+community. This theory applies to any stable community model, and
+directs us towards new questions that may enrich the toolset of invasion
+analysis, and suggests that indirect interactions and dynamical
+stability are key determinants of invasion outcomes.</p>
+<p><br></p>
+<p><strong>9 February 2022 – Gates Dupont (Princeton
+University)</strong></p>
+<p><u>Statistical improvements for ecological learning about spatial
+processes</u></p>
+<p>Ecological inquiry is rooted fundamentally in understanding
+population abundance, both to develop theory and improve conservation
+outcomes. Despite this importance, estimating abundance is difficult due
+to the imperfect detection of individuals in a sample population.
+Further, accounting for space can provide more biologically realistic
+inference, shifting the focus from abundance to density and encouraging
+the exploration of spatial processes. Spatial Capture-Recapture (“SCR”)
+has emerged as the most prominent method for estimating density
+reliably. SCR presents particularly interesting problems of data quality
+because of the requirement for spatial replication of observations of
+individuals. I describe two approaches for improving inference in this
+regard. First, I develop model-based criteria in an algorithmic
+framework to optimize spatial sampling. Second, I integrate finer-scale
+movement data to describe detailed spatial processes. These novel
+approaches represent essential steps in advancing SCR and offer
+intuitive opportunities to advance ecological learning about spatial
+processes.</p>
+<p><br></p>
+<p><strong>19 January 2022 – Frederic Barraquand (CNRS and University of
+Bordeaux)</strong></p>
+<p><u>Inferring species interactions using Granger causality and
+convergent cross mapping</u></p>
+<p>How to reliably infer interactions between species from time series
+of their population densities is a long-standing goal of statistical
+ecology. Usually this inference is done using multivariate (linear)
+autoregressive models, defining interactions through Granger causality:
+<span class="math inline">\(x\)</span> causes <span
+class="math inline">\(y\)</span> whenever <span
+class="math inline">\(x\)</span> helps predicting future <span
+class="math inline">\(y\)</span> values. However, the entangled nature
+of nonlinear ecological systems has suggested an alternative causal
+inference method based on attractor reconstruction, convergent cross
+mapping, which is increasingly popular in ecology. Here, we compare the
+two methods. They uncover interactions with surprisingly similar
+performance for predator-prey cycles, 2-species chaotic or stochastic
+competition, as well as 10- and 20-species networks. Thus, contrary to
+intuition, linear Granger causality remains useful to infer interactions
+in highly nonlinear ecological networks. We conclude on inevitable
+similarities between Granger-causal methods and convergent cross mapping
+due to interaction definitions, and provide suggestions to improve
+many-species interaction inference.</p>
+<p><br></p>
+<p><strong>8 December 2021 – Chris Guiver (Edinburgh Napier
+University)</strong></p>
+<p><u>A switching feedback control approach for persistence of managed
+resources</u></p>
+<p>A brief overview of research by the presenter and their collaborators
+on the use of tools from mathematical control theory in theoretical
+ecology shall be given. Control theory broadly seeks to both understand,
+and subsequently shape, the behaviour of interconnected dynamical
+systems by using measurements of the systems, and control actions to
+affect changes. Although feedback control is nowadays typically viewed
+as an engineering discipline, which traces its roots to the industrial
+revolution, as long ago as 1858 Alfred Russel Wallace drew parallels
+between feedback control and evolution by natural selection. Indeed,
+feedback is an inherent component of numerous biological systems, and
+the concepts of model uncertainty, forced nonlinear dynamics,
+interconnected systems and feedbacks, and control or management
+strategies/actions are ubiquitous in both control theory and aspects of
+theoretical ecology related to population conservation or control. As
+well as giving an overview of relevant recent work, the presentation
+shall focus on the results of the 2021 paper: “A switching feedback
+control approach for persistence of managed resources”, where a
+so-called adaptive switching feedback control scheme is proposed for
+classes of discrete-time, positive difference equations, or systems of
+equations, which naturally model managed quantities of interest, such as
+populations. The work relies on the combination of ideas from adaptive
+control theory and the theory of positive dynamical systems.</p>
+<p><br></p>
+<p><strong>10 November 2021 – Niamh Mimnagh (Maynooth
+University)</strong></p>
+<p><u>Estimating abundance in animal communities: A multi-species
+N-Mixture model</u></p>
+<p>Accurate estimation of animal abundance is of great importance in
+areas such as conservation and wildlife management. The univariate
+N-Mixture model (Royle, 2004) was developed with the aim of estimating
+animal abundance from simple count data, which is inexpensive to
+collect, but prone to imperfect detection. In this presentation, I will
+examine this existing methodology, and how the univariate N-mixture
+model can be extended in order to model populations of multiple species
+simultaneously. This permits us to estimate both species’ abundances and
+inter-species correlations, which allows us to begin to make inferences
+as to the relationships that these species have with one another. I will
+then examine further extensions to this model, which allow us to examine
+data collected over several years, and data in which a large proportion
+of the counts are zero. I’ll finish by looking at simulation studies,
+which were run to examine the accuracy of model estimates, and an
+application of the model to the North American Breeding Bird Survey
+data.</p>
+<p><br></p>
+<p><strong>13 October 2021 – John Donohue (Kings College
+London)</strong></p>
+<p><u>The dynamics of disturbed scavenging communities</u></p>
+<p>Anthropogenic disturbances, particularly mass poisonings, have caused
+crashes in vulture populations in Africa and Asia. Vultures play a
+crucial role in scavenging communities as apex scavengers. Scavenging
+communities in turn are a key component of terrestrial ecosystems,
+ensuring that dead biomass is removed quickly and efficiently. Here,
+using an empirically parameterised mathematical model, we analyse the
+short and long-term behaviour of such communities. In particular, we
+examine the dynamics of a depleted vulture population and how these
+dynamics influence the abundances of rival scavengers as well as the
+overall biomass removal rate of the ecosystem. Finally, using a
+combination of numerical and analytical techniques, we undertake a
+sensitivity analysis with a view to understanding how our findings can
+be transferred from our study system to other ecosystems.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

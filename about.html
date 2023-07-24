@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>About Us</title>
+
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About Us</a>
+</li>
+<li>
+  <a href="seminar.html">Seminar Series</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://www.youtube.com/channel/UCznVGBLo-DzNd5xXIm1ZLJA">
+    <span class="fa fa-brands fa-youtube fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/TSEcol_Group">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:rafael.deandrademoral@mu.ie">
+    <span class="fa fa-regular fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">About Us</h1>
+
+</div>
+
+
+<table>
+<colgroup>
+<col width="42%" />
+<col width="57%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><a href="https://twitter.com/rafamoral">Rafael de Andrade
+Moral</a></td>
+</tr>
+<tr class="even">
+<td><img src="rafael.png" width="150" height="150" class = "center"/></td>
+<td>Rafael is an Associate Professor of Statistics at Maynooth
+University. He holds a BSc in Biology and a PhD in Statistics from
+University of São Paulo, Brazil. He really enjoys teaching and doing
+research related to the development and application of statistical
+modelling techniques to Ecology, Wildlife Management, and Agriculture.
+Besides his work in academia, he enjoys playing guitar and writing
+music, as well as performing magic tricks. Last, but not least, he loves
+German Shepherd dogs!</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://twitter.com/MimnaghNiamh">Niamh Mimnagh</a></td>
+</tr>
+<tr class="even">
+<td><img src="niamh.jpg" width="150" height="150" class = "center"/></td>
+<td>Having obtained a BSc in Applied Mathematics, an MSc in Data Science
+and Analytics, and a PhD in Statistics, Niamh is a Post-Doctoral
+Researcher based in Maynooth University. Niamh’s research interests
+include the development of statistical modelling techniques, their
+applications in ecology, and their implementation using the statistical
+programming language R. Of particular interest are statistical modelling
+techniques which enable the estimation of abundance in animal
+communities.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://www.gabrielrpalma.com">Gabriel Rodrigues
+Palma</a></td>
+</tr>
+<tr class="even">
+<td><img src="gabriel.jpg" width="150" height="150" class = "center"/></td>
+<td>Gabriel graduated with first-class honours Bsc Biological Sciences
+from the University of São Paulo. Since starting his undergraduate
+degree, he has participated in several projects involving statistics,
+mathematical modelling and machine learning. Thanks to these
+opportunities, he has come to love being involved in multidisciplinary
+projects that focus on ecological and entomological research. He is
+currently a PhD researcher in Statistical Ecology in the Hamilton
+Institute of Maynooth University, funded by Science Foundation Ireland’s
+Centre for Research Training in Foundations of Data Science programme.
+His PhD project is entitled <em>“Predicting pest outbreaks: Comparing
+machine learning methods and alert zone procedures”</em>.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://twitter.com/Imdarshanaj">Darshana
+Jayakumari</a></td>
+</tr>
+<tr class="even">
+<td><img src="darshana.png" width="150" height="150" class = "center"/></td>
+<td>Darshana has a BTech in Electrical Engineering and Electronics and
+an MTech in Biomedical Engineering. She has worked with many research
+institutes on the underlying mechanisms of neural behaviour using
+functional MRI data, to which she applied different classical and
+machine learning methods. She is a PhD student in the Science Foundation
+Ireland’s Centre for Research Training in Foundations of Data Science
+programme and is interested in applying machine learning methods to
+solve real-life problems. Her current work involves the development of
+new goodness-of-fit diagnostics for generalized linear models and
+extensions in an ecological context. In her free time, she loves
+exploring nature.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a
+href="https://scholar.google.com/citations?user=7-tLw1wAAAAJ&amp;hl=en&amp;oi=ao">Blake
+McGrane-Corrigan</a></td>
+</tr>
+<tr class="even">
+<td><img src="blake.jpg" width="150" height="200" class = "center"/></td>
+<td>Blake graduated with a first-class honours BSc in Applied
+Mathematics from Maynooth University. He is pursuing an Applied
+Mathematics PhD, funded by an IRC scholarship, within the Mathematics
+and Statistics Department of Maynooth University. His current main
+interests include matrix theory, population persistence, stability
+theory, the joint spectral radius and models of dispersal. His PhD
+thesis is entitled <em>“Coupled Models of Ecological Systems”</em>.
+Outside of research he enjoys art, poetry, bouldering, basketball and
+hiking.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="index.html">Conor Hackett</a></td>
+</tr>
+<tr class="even">
+<td><img src="conor.png" width="150" height="150" class = "center"/></td>
+<td>Conor studied Computer Science and Software Engineering at National
+University of Ireland Maynooth, completing a Bachelor of Science (Hons)
+in 2021. He has experience in the research area of disease modelling
+using geographic data. He is a PhD student in the Science Foundation
+Ireland’s Centre for Research Training in Foundations of Data Science
+programme. In the future he hopes to continue research in this field and
+expand his focus to ecological issues such as the spread of invasive
+species.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://andrmenezes.github.io">André Felipe Berdusco
+Menezes</a></td>
+</tr>
+<tr class="even">
+<td><img src="andre.png" width="150" height="150" class = "center"/></td>
+<td>André received a B.Sc. and a M.Sc. in Statistics, where he studied
+statistical techniques to deal with single cell RNA sequencing
+experiments. After his M.Sc., he had two years experience working as a
+statistician for a data science consulting company using statistical
+techniques to augment decision making in a variety of areas, such as
+pharmaceutical industries, financial institutions, and energy sector
+industries. His main interests are in statistical modelling,
+computational implementation of statistical models and applying data
+science to leverage decision making in real-world problems. Outside
+academia, André likes cycling, hiking, and listening to Brazilian
+music.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="index.html">Rachel McInerney</a></td>
+</tr>
+<tr class="even">
+<td><img src="rachel.jpg" width="150" height="150" class = "center"/></td>
+<td>Rachel is an undergraduate student in Maynooth University, studying
+Applied Mathematics and Statistics. She is currently a SPUR intern,
+supervised by Rafael de Andrade Moral. Her research project is based on
+applying generalized linear mixed models to ecological data. She aims to
+explore and analyse wildlife populations using R. Rachel hopes to
+continue such research after completing her degree.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a
+href="https://scholar.google.com.br/citations?hl=pt-BR&amp;user=eLss6ZIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Jéssica
+Abonizio Gouvea</a></td>
+</tr>
+<tr class="even">
+<td><img src="jessica.jpg" width="150" height="150" class = "center"/></td>
+<td>Jéssica has a BSc in Biology and an MSc in Animal Biology, both from
+São Paulo State University. She has participated in ecological modelling
+projects, having worked in several projects involving environmental
+suitability, occupancy estimation and modelling of medium to large-sized
+mammals. She is currently a PhD researcher in Applied Ecology at
+University of São Paulo, Brazil, funded by Coordination for the
+Improvement of Higher Education Personnel and São Paulo Research
+Foundation. Jessica’s research interests include the development and
+validation of statistical models to estimate the population density of
+giant anteaters from scats and other vestiges. Her other interests
+include demography, genetics and resource use by mammals.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="index.html">Isabella Bueno</a></td>
+</tr>
+<tr class="even">
+<td><img src="isabella.jpg" width="150" height="150" class = "center"/></td>
+<td>Isabella graduated Bsc Biological Sciences from the São Paulo State
+University and an MSc in Entomology from the University of São Paulo.
+She is currently a Ph.D. researcher in the Entomology and Acarology
+department, University of São Paulo, working under the supervision of
+Dr. Wesley Augusto Conde Godoy. Her main research interests are the
+behavioral ecology of ants, mainly related to social immunity. She is
+interested in multidisciplinary projects involving statistics, ecology,
+and entomology. Her Ph.D. project is entitled <em>“Behavioral and
+microbial ecology in</em> Atta sexdens <em>colonies: modeling defensive
+microbiological responses”</em> funded by National Council for
+Scientific and Technological Development, Brazil. She loves cats and
+cycling.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="index.html">Guilherme Cavicchioli da Silva</a></td>
+</tr>
+<tr class="even">
+<td><img src="guilherme.jpg" width="150" height="180" class = "center"/></td>
+<td>Guilherme has a BSc in Biological Science from Santo Amaro
+University and MSc in Ecology and Evolution from São Paulo Federal
+University. He has worked as a field ornithologist and has acquired
+solid experience working in the Atlantic forest, Cerrado and Amazon
+biomes. He is a doctoral student in Applied Ecology at the University of
+São Paulo, Brazil and is funded by Coordination for the Improvement of
+Higher Education Personnel and São Paulo Research Foundation.
+Guilherme’s research focus is on how to optimize and improve sample
+efforts on passive acoustic monitoring for measuring taxonomic,
+phylogenetic and functional diversity in birds. He other research
+interests include population and community ecology, conservation biology
+and quantitative analysis.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://www.researchgate.net/profile/Wesley-Godoy">Wesley
+Godoy</a></td>
+</tr>
+<tr class="even">
+<td><img src="wesley.jpg" width="150" height="190" class = "center"/></td>
+<td>Wesley got his Ph.D. in 1995 in Zoology at São Paulo State
+University, Brazil, working on a research project focused on population
+dynamics of blowflies. His postdoc was developed from 1998 to 1999 at
+the University of California, Davis, supervised by Dr. Alan Hastings on
+insect population dynamics and theoretical ecology. His primary research
+interests are on the interface of spatiotemporal mathematical modeling
+and experimentation with insects of economic importance. Currently, he
+is an associate professor at the College of Agriculture, University of
+São Paulo.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a
+href="https://www.maynoothuniversity.ie/faculty-science-engineering/our-people/charles-markham">Charles
+Markham</a></td>
+</tr>
+<tr class="even">
+<td><img src="charles.jpg" width="150" height="150" class = "center"/></td>
+<td>Charles is an Associate Professor of Computer Science at Maynooth
+University. He is a graduate of Applied Physics at DCU and his PhD was
+in medical imaging. He has worked on tomography, optical brain computer
+interfacing, photoplethysmography, MoCap, biofeedback, mobile machine
+vision, 3D image reconstruction and printing, driving simulation, EEG
+and eye-tracking. He currently teaches courses on Robotics, Computer
+Graphics and Advanced Architecture. He retains a childhood interest in
+microscopy and keeps a large collection of Irish Freshwater Diatom and
+Entomology slides. His most recent work involves physics-based modelling
+of propagation processes within a geospatial framework. He is currently
+interested in the ecological and economic impact of wildfires.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a
+href="https://www.researchgate.net/profile/Luciano-Verdade">Luciano
+Martins Verdade</a></td>
+</tr>
+<tr class="even">
+<td><img src="luciano.png" width="150" height="200" class = "center"/></td>
+<td>Luciano is an Associate Professor at Centro de Energia Nuclear na
+Agricultura (CENA) of the Universidade de São Paulo (USP), in
+Piracicaba, Brazil. He holds a bachelors degree in Agronomy and a MSc.
+from the Escola Superior de Agricultura “Luiz de Queiroz” (ESALQ) of the
+University of São Paulo, and a Ph.D. in Wildlife Ecology and
+Conservation from the University of Florida, USA. He was one the
+founders of the Applied Ecology Graduate Program and the Biological
+Sciences Undergraduate Program at ESALQ / USP. Throughout his academic
+career he has worked with numerous initiatives in Latin America and
+Europe concerned with biodiversity, bioenergy, and bioeconomics. Besides
+his academic work, he is a poet with six published books and an
+enthusiatic (but poor) musician and photographer.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a
+href="https://scholar.google.com/citations?user=-f0hcJYAAAAJ&amp;hl=en&amp;oi=ao">Idemauro
+Antonio Rodrigues de Lara</a></td>
+</tr>
+<tr class="even">
+<td><img src="idemauro.png" width="150" height="180" class = "center"/></td>
+<td>Idemauro is an Associate Professor of Statistics at the University
+of São Paulo, in Piracicaba, Brazil. He holds a Ph.D. in Statistics and
+Agricultural Experimentation from the University of São Paulo, and has
+carried out work as a Post-Doctoral researcher at NUI Galway (2016) and
+Maynooth University (2023). His research interests include sampling
+designs, categorical and longitudinal data analysis, Markov models, and
+the development of statistical methods to analyse data from studies in
+animal behaviour and population dynamics.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

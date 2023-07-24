@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Publications</title>
+
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About Us</a>
+</li>
+<li>
+  <a href="seminar.html">Seminar Series</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://www.youtube.com/channel/UCznVGBLo-DzNd5xXIm1ZLJA">
+    <span class="fa fa-brands fa-youtube fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/TSEcol_Group">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:rafael.deandrademoral@mu.ie">
+    <span class="fa fa-regular fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Publications</h1>
+
+</div>
+
+
+<p><br></p>
+<div id="pre-prints" class="section level2">
+<h2>Pre-prints</h2>
+<p><br></p>
+<p>McGrane-Corrigan, B., Mason, O. and Moral, R.A., 2023. <a
+href="https://arxiv.org/abs/2305.07981">Inferring Stochastic Group
+Interactions within Structured Populations via Coupled
+Autoregression</a>. arXiv preprint arXiv:2305.07981.</p>
+<p>Palma, G.R., Coutinho, R.M., Godoy, W.A., Cônsoli, F.L. and Kraenkel,
+R.A., 2022. <a href="https://arxiv.org/abs/2205.03382">Bacteriophage
+effect on parasitism resistance</a>. arXiv preprint
+arXiv:2205.03382.</p>
+<p>Palma, G.R., Zocchi, S.S., Godoy, W.A. and Wiendl, J.A., 2022. <a
+href="https://arxiv.org/abs/2204.10073">New confidence interval methods
+for Shannon index</a>. arXiv preprint arXiv:2204.10073.</p>
+<p>Dos Santos, A.A., Moral, R.A., Sarti, D.A. and Parnell, A.C., 2022.
+<a href="https://arxiv.org/pdf/2207.00011.pdf">Variational Inference for
+Additive Main and Multiplicative Interaction Effects Models</a>. arXiv
+e-prints, pp.arXiv-2207. (submitted)</p>
+<p>Mimnagh, N., Ferreira, I., Verdade, L. and Moral, R.A., 2022. <a
+href="https://arxiv.org/abs/2206.05944">A Bayesian Model to Estimate
+Abundance Based on Scarce Animal Vestige Data</a>. arXiv preprint
+arXiv:2206.05944. (submitted)</p>
+<p><br></p>
+</div>
+<div id="published" class="section level2">
+<h2>Published</h2>
+<p><br></p>
+<p>Palma, G.R., Godoy, W.A., Engel, E., Lau, D., Galvan, E., Mason, O.,
+Markham, C. and Moral, R.A. (<em>in press</em>). <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S1574954123002492">Pattern-Based
+Prediction of Population Outbreaks</a>. <em>Ecological
+Informatics</em>.</p>
+<p>de Almeida, A.B., Magioli, M., Gheler-Costa, C., Verdade, L.M.,
+Marques, T.S., de Cássia Gilli de Lima, L. and Püttker, T., 2023. <a
+href="https://www.degruyter.com/document/doi/10.1515/mammalia-2022-0073/html">Trophic
+niche overlap among Neotropical carnivores in a silvicultural
+landscape</a>. <em>Mammalia</em>.</p>
+<p>McDonnell, J., McKenna, T., Yurkonis, K.A., Hennessy, D., Moral, R.A.
+and Brophy, C., 2023. <a
+href="https://link.springer.com/article/10.1007/s13253-022-00505-2">A
+Mixed Model for Assessing the Effect of Numerous Plant Species
+Interactions on Grassland Biodiversity and Ecosystem Function
+Relationships</a>. <em>Journal of Agricultural, Biological and
+Environmental Statistics</em>, 28(1), pp.1-19.</p>
+<p>de Godoy, I.B.S., McGrane-Corrigan, B., Mason, O., Moral, R.A. and
+Godoy, W.A.C., 2023. <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0304380022002733">Plant-host
+shift, spatial persistence, and the viability of an invasive insect
+population</a>. <em>Ecological Modelling</em>, 475, p.110172.</p>
+<p>Verdade, L.M., Bianchi, R.C., Galetti Jr, P.M., Pivello, V.R., Silva,
+W.R. and Uezu, A., 2022. <a
+href="https://www.scielo.br/j/bn/a/9ZPK76DwGBvzfhn5WNdgB4n/">Biodiversity
+Management and Research in Multifunctional Landscapes</a>. <em>Biota
+Neotropica</em>, 22.</p>
+<p>Mimnagh, N., Parnell, A., Prado, E., Moral, R.A., 2022. <a
+href="https://link.springer.com/article/10.1007/s10651-022-00542-7#citeas">Bayesian
+multi-species N-mixture models for unmarked animal communities</a>.
+<em>Environmental and Ecological Statistics</em>.</p>
+<p>Duarte, M.M., Moral, R.A., Guillemot, J., Zuim, C.I.F., Potvin, C.,
+Bonat, W.H., Stape, J.L. and Brancalion, P.H., 2021. <a
+href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2745.13669">High
+tree diversity enhances light interception in tropical forests</a>.
+<em>Journal of Ecology</em>.</p>
+<p>Hackett, C., Moral, R.A. and Markham, C., 2021. <a
+href="https://ieeexplore.ieee.org/abstract/document/9467871">Simulating
+Disease in Periods of Low Mobility Using a Hybrid Diffusion and
+Compartmental Model Built on Geographic Data</a>. <em>32nd Irish Signals
+and Systems Conference (ISSC)</em>.</p>
+<p>Moral, R.A., Hinde, J. and Demétrio, C.G., 2020. <a
+href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2019.1647849">Bivariate
+Residual Plots With Simulation Polygons</a>. <em>Journal of
+Computational and Graphical Statistics</em>, 29(1), pp.203-214.</p>
+<p>Verdade, L.M., Moral, R.A., Calaboni, A., do Amaral, M.V., Martin,
+P.S., Amorim, L.S., Gheler-Costa, C. and Piña, C.I., 2020. <a
+href="https://www.sciencedirect.com/science/article/pii/S2351989420307587">Temporal
+dynamics of small mammals in Eucalyptus plantations in Southeast
+Brazil</a>. <em>Global Ecology and Conservation</em>, 24, p.e01217.</p>
+<p>Moral, R.A., Hinde, J., Ortega, E.M.M., Demétrio, C.G.B. and Godoy,
+W.A.C., 2020. <a
+href="https://www.tandfonline.com/doi/abs/10.1080/02664763.2019.1693522">Location-scale
+mixed models and goodness-of-fit assessment applied to insect
+ecology</a>. <em>Journal of Applied Statistics</em>, 47(10),
+pp.1776-1793.</p>
+<p>Pollard, C.P., Griffin, C.T., Moral, R.A., Duffy, C., Chuche, J.,
+Gaffney, M.T., Fealy, R.M. and Fealy, R., 2020. <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0304380019304181">phenModel:
+A temperature-dependent phenology/voltinism model for a herbivorous
+insect incorporating facultative diapause and budburst</a>.
+<em>Ecological Modelling</em>, 416, p.108910.</p>
+<p>Cucak, M., Sparks, A., Moral, R.A., Kildea, S., Lambkin, K. and
+Fealy, R., 2019. <a
+href="https://www.mdpi.com/2073-4395/9/9/515">Evaluation of the ‘Irish
+rules’: the potato late blight forecasting model and its operational use
+in the Republic of Ireland</a>. <em>Agronomy</em>, 9(9), p.515.</p>
+<p>Moral, R.A., Hinde, J., Demétrio, C.G., Reigada, C. and Godoy, W.A.,
+2018. <a
+href="https://link.springer.com/article/10.1007/s13253-017-0316-3">Models
+for Jointly Estimating Abundances of Two Unmarked Site-Associated
+Species Subject to Imperfect Detection</a>. <em>Journal of Agricultural,
+Biological and Environmental Statistics</em>, 23(1), pp.20-38.</p>
+<p>Moral, R.A., Demétrio, C.G.B., Hinde, J., Godoy, W.A.C. and
+Fernandes, F.S., 2017. <a
+href="https://www.sciencedirect.com/science/article/pii/S1439179116302262">Parasitism-mediated
+prey selectivity in laboratory conditions and implications for
+biological control</a>. <em>Basic and Applied Ecology</em>, 19,
+pp.67-75.</p>
+<p>Alexandrino, E.R., Buechley, E.R., Piratelli, A.J., de Barros,
+K.M.P.M., Moral, R.A., Şekercioğlu, Ç.H., Silva, W.R. and do Couto,
+H.T.Z., 2016. <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S1470160X16300218">Bird
+sensitivity to disturbance as an indicator of forest patch conditions:
+An issue in environmental assessments</a>. <em>Ecological
+Indicators</em>, 66, pp.369-381.</p>
+<p>Moral, R.A., Azevedo, F.C. and Verdade, L.M., 2016. <a
+href="https://link.springer.com/article/10.1186/s13570-016-0065-x">The
+use of sheepdogs in sheep production in southeastern Brazil</a>.
+<em>Pastoralism</em>, 6(1), pp.1-7.</p>
+<p>Demétrio, C.G., Hinde, J. and Moral, R.A., 2014. <a
+href="https://link.springer.com/chapter/10.1007/978-3-319-06877-0_9">Models
+for overdispersed data in entomology. In Ecological modelling applied to
+entomology</a> (pp. 219-259). Springer.</p>
+<p>Moral, R.A., Hinde, J. and Demétrio, C.G., 2017. <a
+href="https://www.jstatsoft.org/article/view/v081i10">Half-normal plots
+and overdispersed models in R: the hnp package</a>. <em>Journal of
+Statistical Software</em>, 81(1), pp.1-23.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
